@@ -13,7 +13,7 @@ if __name__ == "__main__":
     msg = MIMEMultipart()
     msg['From'] = 'MailClient'
     msg['To'] = private.recipient
-    msg['Subject'] = 'Test'
+    msg['Subject'] = private.subject
 
     with open('message.txt', 'r') as f:
         message = f.read()
